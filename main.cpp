@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-int ìain()
+int main()
 {
     double dolar_hrn = 39.58;
     double euro_hrn = 42.7;
@@ -21,11 +21,12 @@ int ìain()
     cout << "6 = dolar_euro = 0.93\n";
     cout << "7 = exit" << endl;
 
+    int choise = 0;
     cout << "your choise ";
-    int choise;
     cin >> choise;
     for (; choise <= 7;)
     {
+
         if (choise == 1)
         {
             cout << "enter sum ";
@@ -33,6 +34,9 @@ int ìain()
             cin >> sum1;
             double conv1 = (dolar_hrn * sum1);
             cout << "dolar --> hrn = " << conv1 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 2)
         {
@@ -41,6 +45,9 @@ int ìain()
             cin >> sum2;
             double conv2 = (euro_hrn * sum2);
             cout << "euro --> hrn = " << conv2 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 3)
         {
@@ -49,6 +56,9 @@ int ìain()
             cin >> sum3;
             double conv3 = (hrn_euro * sum3);
             cout << "hrn --> euro = " << conv3 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 4)
         {
@@ -57,6 +67,9 @@ int ìain()
             cin >> sum4;
             double conv4 = (hrn_dolar * sum4);
             cout << "hrn --> dolar = " << conv4 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 5)
         {
@@ -65,6 +78,9 @@ int ìain()
             cin >> sum5;
             double conv5 = (euro_dolar * sum5);
             cout << "euro --> dolar = " << conv5 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 6)
         {
@@ -73,10 +89,16 @@ int ìain()
             cin >> sum6;
             double conv6 = (dolar_euro * sum6);
             cout << "dolar --> euro = " << conv6 << endl;
+
+            cout << "your choise ";
+            cin >> choise;
         }
         if (choise == 0)
         {
+            cout << "Bye" << endl;
             break;
+            system("pause");
+            return 0;
         }
         
     }
