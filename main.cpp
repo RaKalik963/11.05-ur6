@@ -3,21 +3,21 @@
 #include <ctime>
 using namespace std;
 
-#define dollar_hrn = 39.58
-#define euro_hrn = 42.7
-#define dollar_euro = 0.93
-#define euro_dollar = 1.08
-#define hrn_dollar = 0.025
-#define hrn_euro = 0.023
+double dolar_hrn = 39.58;
+double euro_hrn = 42.7;
+double dolar_euro = 0.93;
+double euro_dolar = 1.08;
+double hrn_dolar = 0.025;
+double hrn_euro = 0.023;
 int main()
 {
     cout << "choise conversion \n";
-    cout << "1 = dollar_hrn = 39.58 \n";
+    cout << "1 = dolar_hrn = 39.58 \n";
     cout << "2 = euro_hrn = 42.7 \n";
     cout << "3 = hrn_euro = 0.023 \n";
-    cout << "4 = hrn_dollar = 0.025 \n";
-    cout << "5 = euro_dollar = 1.08\n";
-    cout << "6 = dollar_euro = 0.93\n";
+    cout << "4 = hrn_dolar = 0.025 \n";
+    cout << "5 = euro_dolar = 1.08\n";
+    cout << "6 = dolar_euro = 0.93\n";
     cout << "7 = exit" << endl;
 
     cout << "your choise ";
@@ -28,41 +28,56 @@ int main()
         if (choise == 1)
         {
             cout << "enter sum ";
-            int dollar1;
-            cin >> dollar1;
+            int sum1;
+            cin >> sum1;
+            double conv1 = (dolar_hrn * sum1);
+            cout << "dolar --> hrn = " << conv1 << endl;
         }
-        else if (choise == 2)
+        if (choise == 2)
         {
             cout << "enter sum ";
-            int euro1;
-            cin >> euro1;
+            int sum2;
+            cin >> sum2;
+            double conv2 = (dolar_hrn * sum2);
+            cout << "euro --> hrn = " << conv2 << endl;
         }
-        else if (choise == 3)
+        if (choise == 3)
         {
             cout << "enter sum ";
-            int hrn1;
-            cin >> hrn1;
+            int sum3;
+            cin >> sum3;
+            double conv3 = (dolar_hrn * sum3);
+            cout << "hrn --> euro = " << conv3 << endl;
         }
-        else if (choise == 4)
+        if (choise == 4)
         {
             cout << "enter sum ";
-            int hrn2;
-            cin >> hrn2;
+            int sum4;
+            cin >> sum4;
+            double conv1 = (dolar_hrn * sum4);
+            cout << "dolar --> hrn = " << conv1 << endl;
         }
-        else if (choise == 5)
+        if (choise == 5)
         {
             cout << "enter sum ";
-            int dollar;
-            cin >> dollar;
+            int sum5;
+            cin >> sum5;
+            double conv1 = (dolar_hrn * sum5);
+            cout << "dolar --> hrn = " << conv1 << endl;
         }
-        else if (choise == 6)
+        if (choise == 6)
         {
             cout << "enter sum ";
-            int dollar;
-            cin >> dollar;
+            int sum6;
+            cin >> sum6;
+            double conv1 = (dolar_hrn * sum6);
+            cout << "dolar --> hrn = " << conv1 << endl;
         }
-        else
-            cout << "error" << endl;
+        if (choise == 0)
+        {
+            break;
+        }
+        
     }
     system("pause");
     return 0;
