@@ -3,20 +3,16 @@
 #include <ctime>
 using namespace std;
 
-int main()
-{
+int main() {
+    int A;
     cout << "enter num ";
-    int num;
-    cin >> num;
+    cin >> A;
 
-    cout << "numbers that are divisible without remainder " << num;
-    for (int i = 1; i <= (num < 0 ? -num : num); ++i) {
-        if (num % i == 0) {
+    for (int i = 1; i <= A; ++i) {
+        if (A % i == 0) {
             cout << i << " ";
         }
     }
-
     cout << endl;
-    system("pause");
     return 0;
 }
