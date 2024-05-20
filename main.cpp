@@ -8,17 +8,17 @@ int main()
     int count = 0;
 
     for (int i = 100; i <= 999; ++i) {
-        int hund = i / 100;
+        int hundr = i / 100;
         int ten = (i / 10) % 10;
-        int one = i % 10;
+        int ones = i % 10;
 
-        if (hund != ten && hund != one && ten != one)
+        if (hundr != ten && hundr != ones && ten != ones)
         {
             ++count;
         }
     }
 
-    cout << "count of numbers with diferent num " << count << endl;
+    cout << "count of numbers with diferent number " << count << endl;
     system("pause");
     return 0;
 }
