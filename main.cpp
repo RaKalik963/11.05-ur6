@@ -10,22 +10,18 @@ int main()
     cin >> A;
 
     int sum = 0;
-    int temp = A;
-    for (int B = 1; B * B <= A; ++B) {
-        if (A % (B * B) == 0) {
-            cout << "kub sum == kvadraty A" << endl;
-            system("pause");
-        }
-        else if (A % (B * B * B) != 0)
-        {
-            cout << "kub sum != kvadraty A" << endl;
-            system("pause");
-        }
-        else
-            cout << "error" << endl;
+    for (int temp = A; temp != 0; temp /= 10) {
+        sum += temp % 10;
     }
 
-    
-    system("pause");
+    int cubeSum = sum * sum * sum;
+    int squareA = A * A;
+
+    if (cubeSum == squareA) {
+        cout << "sum^3 == A^2" << endl;
+    }
+    else {
+        cout << "sum^3 != A^2" << endl;
+    }
     return 0;
 }
