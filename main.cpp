@@ -9,21 +9,23 @@ int main()
     int A;
     cin >> A;
 
-    int sum_of_digits = 0;
-    for (; A != 0; sum_of_digits += A % 10, A /= 10);
-
-    int cube_of_sum = sum_of_digits * sum_of_digits * sum_of_digits;
-
-    int square_of_A = A * A;
-
-    if (cube_of_sum == square_of_A) 
-    {
-        cout << "kub sum == kvadraty A" << endl;
+    int sum = 0;
+    int temp = A;
+    for (int B = 1; B * B <= A; ++B) {
+        if (A % (B * B) == 0) {
+            cout << "kub sum == kvadraty A" << endl;
+            system("pause");
+        }
+        else if (A % (B * B * B) != 0)
+        {
+            cout << "kub sum != kvadraty A" << endl;
+            system("pause");
+        }
+        else
+            cout << "error" << endl;
     }
-    else 
-    {
-        cout << "kub sum != kvadraty A" << endl;
-    }
+
+    
     system("pause");
     return 0;
 }
