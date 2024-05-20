@@ -19,7 +19,7 @@ int main()
     cout << "4 = hrn_dolar = 0.025 \n";
     cout << "5 = euro_dolar = 1.08\n";
     cout << "6 = dolar_euro = 0.93\n";
-    cout << "7 = exit" << endl;
+    cout << "0 = exit" << endl;
 
     int choise = 0;
     cout << "your choise ";
@@ -97,8 +97,6 @@ int main()
         {
             cout << "Bye" << endl;
             break;
-            system("pause");
-            return 0;
         }
         
     }
