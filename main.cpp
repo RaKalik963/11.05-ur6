@@ -9,7 +9,8 @@ int main()
     int A;
     cin >> A;
 
-    for (int B = 1; B * B <= A; ++B) {
+    cout << "result= ";
+    for (int B = 1; B <= A; ++B) {
         if (A % (B * B) == 0 && A % (B * B * B) != 0) {
             cout << B << " ";
         }
